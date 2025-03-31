@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mayank Rupareliya Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Mayank Rupareliya</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+			  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Mayank Rupareliya</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Enthusiast  ',
+						'Data Analyst ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Data Engineer/Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p> <a href="https://github.com/mr7498" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <!-- CSS Styles -->
+<style>
+	.img-about {
+	  max-height: 520px; /* Adjust the height as needed */
+	  overflow: hidden;
+	}
+	.img-about img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	}
+  </style>
+  
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+	<div class="container">
+	  <div class="row d-flex align-items-stretch">
+		<!-- Enlarged Image Column with Limited Height -->
+		<div class="col-md-6 col-lg-6 d-flex">
+		  <div class="img-about img d-flex align-items-stretch">
+			<img src="images/image_1.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+		  </div>
+		</div>
+		<!-- About Me Text Column -->
+		<div class="col-md-6 col-lg-6 pl-lg-5 pb-5">
+		  <div class="heading-section ftco-animate">
+			<h1 class="big">About</h1>
+			<h2 class="mb-4">About Me</h2>
+			<p>
+				Hello, I’m <strong style="color: #FFD700;">Mayank Rupareliya</strong>, your go-to data enthusiast with a passion for turning raw data into powerful insights. Currently pursuing an M.Sc. in Web and Data Science, I spend my days wrangling Python, SQL, and Atlreyx, crafting scalable ETL pipelines, and optimizing data workflows like a pro. My expertise spans data engineering, analytics, and cloud platforms.
+
+				<p>With <strong style="color: #FFD700;">2 years of experience</strong>, I’ve tackled projects at Ford, the University of Koblenz, and WP Event Manager, mastering everything from BI tools to data modeling and machine learning. Fluent in English, Hindi, and improving my German, I thrive on solving complex data challenges and making data-driven decisions effortlessly clear. 🚀</p>
+			</p>
+			<ul class="about-info mt-4 px-md-0 px-2">
+			  <li class="d-flex"><span>Degree:</span> <span>Master of Science</span></li>
+			  <li class="d-flex"><span>Address:</span> <span>Koblenz, Germany</span></li>
+			  <li class="d-flex"><span>Email:</span> <span>mayankrupareliya007@gmail.com</span></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+	  
+
+
+
+	
+  <section class="ftco-section ftco-no-pb" id="experience-section">
+	<div class="container">
+	  <div class="row justify-content-center pb-5">
+		<div class="col-md-10 heading-section text-center ftco-animate">
+		</div>
+	  </div>
+  
+	  <!-- Experience Section -->
+	  <div class="row">
+		<h1 class="big-4">Experience</h1>
+		<div class="underline"></div>
+	  </div>
+	  <br>
+	  
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="resume-wrap ftco-animate">
+			<span class="date">Ford Motor Company</span>
+			<h2>Master Thesis Student</h2>
+			<span class="position">06.2024-11.2024</span>
+			<p>For my thesis, I developed an automated framework for automotive service data quality assessment, implementing validation checks, anomaly detection, and consistency measures to enhance data reliability.</p>
+		  </div>
+		</div>
+  
+		<div class="col-md-6">
+		  <div class="resume-wrap ftco-animate">
+			<span class="date">Ford Motor Company</span>
+			<h2>Working Student Data Engineer</h2>
+			<span class="position">08.2023-04.2024</span>
+			<p>As a working student at Ford, I contributed to data quality improvement projects, developed ETL workflows, and analyzed automotive service data. I also supported CRM data integration using Google Cloud and Alteryx.</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="resume-wrap ftco-animate">
+			<span class="date">University of Koblenz</span>
+			<h2>Research &amp; Teaching Assistant</h2>
+			<span class="position">01.2023-03.2023</span>
+			<p>Assisted in preparing and grading assignments for Web Science courses, enhancing my expertise in programming concepts and problem-solving.</p>
+		  </div>
+		</div>
+  
+		<div class="col-md-6">
+		  <div class="resume-wrap ftco-animate">
+			<span class="date">WP Event Manager</span>
+			<h2>Intern Data Analyst</h2>
+			<span class="position">09.2022-03.2021</span>
+			<p>Analyzed datasets with Python and SQL, identified trends, and created dashboards. Gained experience in data visualization and machine learning tools.</p>
+		  </div>
+		</div>
+	  </div>  
+  
+	  <br>
+	  <br>
+  
+	  <!-- Education Section -->
+	  <div id="education-section">
+		<div class="row">
+		  <h1 class="big-4">Education</h1>
+		  <div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+		  <div class="col-md-6">
+			<div class="resume-wrap ftco-animate">
+			  <span class="date">University of Koblenz</span>
+			  <h2>MSc. Web and Data Science</h2>
+			  <span class="position">2021-2025</span>
+			</div>
+		  </div>
+  
+		  <div class="col-md-6">
+			<div class="resume-wrap ftco-animate">
+			  <span class="date">Gujarat Technological University</span>
+			  <h2>B.E. Information Technology</h2>
+			  <span class="position">2016-2020</span>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Skills</h1>
+			  <h2 class="mb-4">My Skills</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<!-- Left Column -->
+			<div class="col-md-6">
+			  <div class="skill-mf">
+				<span>Python</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>SQL</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Alteryx</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Docker</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Google Cloud</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Big Query</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Vertex AI</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>ETL/ELT</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+			  </div>
+			</div>
+			<!-- Right Column -->
+			<div class="col-md-6">
+			  <div class="skill-mf">
+				<span>Data Quality</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>EDA</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Apache Airflow</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Machine Learning</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Tableau</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Dataplex</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Time-Series</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<span>Analytical Thinking</span>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+	  
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/mr7498/COVID-and-AI" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/mr7498/COVID-and-AI">Covid & AI Recommendation System</a></h3>
+                <p>Developed a COVID-19 dashboard in Dash for real-time visualization and a symptom-based recommendation system using ML techniques.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/mr7498/Airflow-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/mr7498/Airflow-Project">Weather Data ETL Pipeline using Airflow</a></h3>
+                <p>Built a Weather Data ETL pipeline using Airflow, automating ingestion, transformation, and storage in PostgreSQL for real-time analytics.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://public.tableau.com/app/profile/mayank.rupareliya/viz/Game_Sales_Dashboard_17430896797850/Dashboard1?publish=yes" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://public.tableau.com/app/profile/mayank.rupareliya/viz/Game_Sales_Dashboard_17430896797850/Dashboard1?publish=yes">Game Sales Overview in Tableau</a></h3>
+                <p>Created a Game Sales Overview dashboard in Tableau, visualizing sales performance, trends, and key metrics using interactive charts and filters for data-driven insights.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://public.tableau.com/app/profile/mayank.rupareliya/viz/FinancialComplaintOverview_17430904577920/FCOVERVIEW?publish=yes" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://public.tableau.com/app/profile/mayank.rupareliya/viz/FinancialComplaintOverview_17430904577920/FCOVERVIEW?publish=yes">Financial Complaints Overview in Tableau</a></h3>
+			  <p>Created a Game Sales Overview dashboard in Tableau, visualizing sales performance, trends, and key metrics using interactive charts and filters for data-driven insights.</p>
+			</div>
+		  </div>
+		</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/mr7498/Time-Series-Analysis-and-Forecasting-of-Hourly-Energy-Consumption" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/mr7498/Time-Series-Analysis-and-Forecasting-of-Hourly-Energy-Consumption">Hourly Energy Consumption- Time Series Forecasting</a></h3>
+				  <p>Developed a time series forecasting model for hourly energy consumption, using Python, Pandas, and machine learning techniques to predict future demand and optimize energy usage.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+		</div>
+	  </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Contact</h1>
+			  <h2 class="mb-4">Contact Me</h2>
+			  <p>Below are the details to reach out to me!</p>
+			</div>
+		  </div>
+	  
+		  <!-- Centered Contact Info -->
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="icon-map-signs"></span>
+				</div>
+				<h3 class="mb-4">Address</h3>
+				<p>Roonstraße 29, 56068, Koblenz</p>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="icon-phone2"></span>
+				</div>
+				<h3 class="mb-4">Contact Number</h3>
+				<p><a href="tel://+49 15750605564">+49 15750605564</a></p>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="icon-paper-plane"></span>
+				</div>
+				<h3 class="mb-4">Email Address</h3>
+				<p><a href="mailto:mayankrupareliya007@gmail.com">mayankrupareliya007@gmail.com</a></p>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <!-- Contact Form -->
+		  <!-- <div class="row">
+			<div class="col-md-12">
+			  <form name="submit-to-google-sheet" action="your_form_handler.php" method="post" class="contact-form">
+				<div class="form-group">
+				  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+				</div>
+				<div class="form-group">
+				  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+				</div>
+				<div class="form-group">
+				  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+				</div>
+				<div class="form-group">
+				  <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+				</div>
+				<div class="form-group">
+				  <button type="submit" class="btn btn-primary py-3 px-5">Submit</button>
+				</div>
+			  </form>
+			</div>
+		  </div>
+		-->
+	  
+		  <!-- Social Links (Below the Form) -->
+		  <div class="row">
+			<div class="col-md-12">
+			  <br>
+			  <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+				<li class="ftco-animate normal-txt">Find me on</li>
+				<li class="ftco-animate"><a href="https://github.com/mr7498"><span class="icon-github"></span></a></li>
+				<li class="ftco-animate"><a href="https://www.linkedin.com/in/mayank-rupareliya-093583134/"><span class="icon-linkedin"></span></a></li>
+				<li class="ftco-animate"><a href="https://www.xing.com/profile/Mayank_Rupareliya/web_profiles?expandNeffi=true"><span class="icon-xing"></span></a></li>
+			  </ul>
+			  <br>
+			</div>
+		  </div>
+	  
+		</div>
+	  </section>
+	  
+	  
+
+ <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+  
+  <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxnYY4x6eToCtArlvnw4DcV3rXYCRCjlQyelfHX7YqzsahuVUMKVGCRX7Fo7oV2WZTvNA/exec'
+	const form = document.forms['submit-to-google-sheet']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => console.log('Success!', response))
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
+    
+  </body>
+</html>
